@@ -1,0 +1,128 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+    
+ }
+.hero__section {
+    background: url(./images/heroSectionBackground.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    color: white;
+    
+}
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 16px 48px;
+    height: 60px;
+
+ }
+ /*For anchor tag */
+.navbar a {
+text-decoration: none; /*to remove underline in anchor tag*/
+color: white;
+}
+
+.navbar__menu_cointainer {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__menu_cointainer .user__icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid 1px white;
+
+}
+
+.hero__section__cointainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: calc(60vh - 60px);
+    
+}
+
+.hero__section_logo {
+    width: 200px;
+    height: auto;
+}
+
+.hero__section_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero__section_input_container {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+.input__cointainer_location,
+.input__cointainer_search {
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.input__cointainer_search{
+    width:65%;
+}
+.input__cointainer_location{
+    width:35%;
+    border-right: 2px solid grey;
+}
+
+@media only screen and (max-width: 670px) {
+    .navbar__menu_cointainer .link{
+        display:none;
+    }
+    .navbar{
+        padding: 16px;
+    }
+    .navbar__menu_cointainer .user__icon{
+        display: flex;
+    }   
+    .hero__section {
+         min-height: 80vh;
+    }
+    .hero__section_input_container {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;    
+    }
+    .input__cointainer_location,
+    .input__cointainer_search {
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width:80%;
+    }
+    .hero__section__cointainer{
+        height: calc(80vh-60px);
+
+    }
+    .hero__section_title {
+        font-size: 20px;
+        width: 80%;
+    }
+}
